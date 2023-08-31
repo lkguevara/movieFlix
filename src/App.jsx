@@ -1,7 +1,7 @@
 import {Layout} from 'antd'
 import { Routes, Route } from "react-router-dom";
-import Home from './pages/Home'
-import DetailMovie from './pages/DetailMovie'
+import Home from './Pages/Home'
+import DetailMovie from './Pages/DetailMovie'
 import NotFound from './Pages/NotFound';
 import NewsMovies from './Pages/NewsMovies';
 import PopularMovies from './Pages/PopularMovies';
