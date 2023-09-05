@@ -1,0 +1,43 @@
+.menu{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    &__logo img{
+       display: flex;
+       width: 80%;
+    }
+
+    &__antd ul{
+        background-color: #052047;
+        color: white;
+    }
+
+    .menu__list{
+        display: none;
+    }
+    
+    @media (min-width: 768px){
+        .buttonMenu{
+            display: none;
+        }
+
+        .menu__list{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            background-color: #052047;
+            margin-left: 10px;
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .menu{
+        display: flex;
+        justify-content: flex-start;
+    }
+}
