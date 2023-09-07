@@ -43,7 +43,9 @@ const HamburgerMenu  = () => {
             </Menu>
         </Drawer>
         <div className="menu__logo">
-            <img src={Logo} alt="logo" />
+            <Link to="/">
+                <img src={Logo} alt="logo" />
+            </Link>
         </div>
 
         <Menu
