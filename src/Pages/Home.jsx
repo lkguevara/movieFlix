@@ -1,25 +1,14 @@
+import SliderMovies from '../components/SliderMovies/SliderMovies'
 import {useFetch} from '../Hooks/useFetch'
+import {URL_API, URL_TOKEN} from '../utils/constants'
+import '../App.css'
 
 const Home = () => {
-
-  const {result, loading, error} = useFetch('https://api.themoviedb.org/3/movie/popular?api_key=af59caeef70579798b8e6d985ff921ae')
-  const popularMovies = result?.results
-  console.log(popularMovies)
+  const newMovies = useFetch(`${URL_API}/movie/now_playing?api_key=${URL_TOKEN}&language=es-US&page=1`)
 
   return (
-    <div>
-      {error && <h1>Error: {error}</h1>}
-      {loading && <h1>Loading...</h1>}
-      {
-        popularMovies?.map((movie) => {
-          return (
-            <div key={movie.id}>
-              <h1>{movie.original_title}</h1>
-            </div>
-          )
-        }
-        )
-      }
+    <div className='carousel'>
+      <SliderMovies movies={newMovies}/>
     </div>
   )
 }

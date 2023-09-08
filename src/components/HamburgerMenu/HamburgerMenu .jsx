@@ -50,10 +50,8 @@ const HamburgerMenu  = () => {
 
         <Menu
             className="menu__list"
-            theme="dark"
             mode="horizontal"
-            defaultSelectedKeys={['1']}
-            style={{ lineHeight: '64px' }}
+            style={{ lineHeight: '64px', color: 'white' }}
         >
             <Menu.Item key='1'>
                 <Link to="/">Inicio</Link>

@@ -25,7 +25,7 @@ function App() {
           <Route path="/new-movies" element={<NewsMovies />} />
           <Route path="/popular" element={<PopularMovies />} />
           <Route path="/search" element={<Search />} />
-          <Route path="/detail/:id" element={<DetailMovie />} />
+          <Route path="/movie/:id" element={<DetailMovie />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>

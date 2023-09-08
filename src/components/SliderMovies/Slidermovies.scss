@@ -1,0 +1,26 @@
+.slider-movies{
+    background-color: white;
+
+    &__movie{
+        width: 100%;
+        margin-right: 15px;
+        img{
+            width: 100%;
+            height: 8%;
+            object-fit: cover;
+        }
+    }
+
+    @media screen and (min-width: 768px){
+        &__movie{
+            img{
+                width: 90%;
+                margin: 0 auto;
+                height: 45vh;
+                object-fit: cover;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+        }
+    }
+}
