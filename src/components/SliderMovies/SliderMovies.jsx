@@ -1,4 +1,5 @@
 import './SliderMovies.scss'
+
 import {Carousel} from 'antd'
 import {Link} from 'react-router-dom'
 import PropTypes from 'prop-types'
