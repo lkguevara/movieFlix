@@ -11,8 +11,6 @@ const SliderMovies = ({movies}) => {
         return 'Loading...'
     }
 
-    console.log(movies.result.results)
-
     return (
         <Carousel autoplay className="slider-movies">
             {movies.result.results.map(movie => (
