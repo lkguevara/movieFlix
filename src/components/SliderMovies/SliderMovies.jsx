@@ -1,4 +1,4 @@
-import './SliderMovies.scss'
+import './index.scss'
 
 import {Carousel} from 'antd'
 import {Link} from 'react-router-dom'
