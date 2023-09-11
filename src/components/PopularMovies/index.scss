@@ -1,3 +1,51 @@
 .popularMovies{
-    
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-color: gray;
+
+    .ant-list-header{
+        background-color: #092f64;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+
+        h2{
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+
+    .ant-list-items{
+        height: 400px;
+        overflow-y: scroll;
+    }
+
+    .ant-list-item-meta{
+        align-items: center;
+
+        &-title{
+            text-align: initial;
+        }
+
+        &-description{
+            text-align: initial;
+
+            span{
+                font-size: 12px;
+                color: gray;
+                font-weight: bold;
+            }
+        }
+    }
+
+    @media (min-width: 768px){
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 10px;
+        max-width: 1000px;
+    }
 }
