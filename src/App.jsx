@@ -5,7 +5,7 @@ import './App.css'
 import HamburgerMenu from './components/HamburgerMenu/HamburgerMenu '
 // Pages
 import Home from './Pages/Home'
-import DetailMovie from './Pages/DetailMovie'
+import DetailMovie from './Pages/detailMovie/DetailMovie';
 import NotFound from './Pages/NotFound';
 import NewsMovies from './Pages/NewsMovies';
 import PopularMovies from './Pages/PopularMovies';
