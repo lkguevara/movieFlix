@@ -1,0 +1,20 @@
+.movie-catalog{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+    max-width: 1200px;
+    .movie-catalog__item{
+        margin-bottom: 20px;
+        margin-right: 20px;
+        .movie-catalog__item__img{
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+    }
+}
