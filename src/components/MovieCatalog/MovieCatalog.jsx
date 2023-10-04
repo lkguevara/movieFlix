@@ -6,18 +6,22 @@ import './index.scss'
 
 const MovieCatalog = ({movies}) => {
 
+    console.log(movies.results)
   return (
     <div className="movie-catalog">
-        {movies.map(movie => (
+        {movies.results.map(movie => (
             <Col key={movie.id} xs={4} className="movie-catalog">
                 <Link to={`/movie/${movie.id}`}>
                     <Card
                         hoverable
                         style={{ width: 240 }}
                         cover={<img alt={movie.title} src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`} />}
-                        actions={[<EyeOutlined />]}
+                        actions={[<EyeOutlined key="detail"/>]}
                     >
-                        <Meta title={movie.title} />
+                        <Meta 
+                            title={movie.title} 
+                            description={movie.overview.substr(0, 50) + '...'}
+                        />
                     </Card>
                 </Link>
             </Col>

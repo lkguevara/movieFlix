@@ -1,6 +1,7 @@
 import {Layout} from 'antd'
 import { Routes, Route } from "react-router-dom";
 import './App.css'
+import "rc-pagination/assets/index.css";
 // Components
 import HamburgerMenu from './components/HamburgerMenu/HamburgerMenu '
 // Pages
