@@ -7,10 +7,10 @@ import HamburgerMenu from './components/HamburgerMenu/HamburgerMenu '
 // Pages
 import Home from './Pages/Home'
 import DetailMovie from './Pages/detailMovie/DetailMovie';
-import NotFound from './Pages/NotFound';
+import NotFound from './Pages/NotFound/NotFound';
 import NewsMovies from './Pages/NewsMovies';
 import PopularMovies from './Pages/PopularMovies';
-import Search from './Pages/Search';
+import Search from './Pages/search/Search';
 import { Header } from 'antd/es/layout/layout';
 
 function App() {
